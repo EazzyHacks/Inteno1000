@@ -1,15 +1,19 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.ComprarBot);
+  m.reply(global.ghostshop);
 };
-handler.command ='comprarbot',/^(ComprarBot|Comprar|comprar|ComprarBot)$/i;
+handler.command ='ghostshop',/^(ghostshop)$/i;
 export default handler;
 
-global.ComprarBot = `
-〔 *BLACK CLOVER- BOT* 〕
+global.ghostshop = `
+𝐓𝐞 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐚 𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐔𝐧 𝐁𝐨𝐭 𝐏𝐞𝐫𝐳𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐨 ¿?
+*𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎* 𝚂𝚎𝚛𝚒𝚊 𝚃𝚞 𝙼𝚎𝚓𝚘𝚛 𝙾𝚙𝚌𝚒𝚘𝚗
+𝙿𝚘𝚛 𝚀𝚞𝚎 ¿? 
+*𝙶𝚑𝚘𝚜𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎* 𝚃𝚒𝚎𝚗𝚎 𝙻𝚊 𝚃𝚎𝚐𝚗𝚘𝚕𝚘𝚐𝚒𝚊 𝙳𝚎 𝙿𝚎𝚛𝚖𝚒𝚝𝚒𝚛 𝙳𝚎𝚓𝚊𝚛𝚝𝚎 𝚀𝚞𝚎 𝚃𝚞 𝙼𝚒𝚜𝚖𝚘 𝙰𝚐𝚛𝚎𝚐𝚞𝚎𝚜 𝙲𝚘𝚖𝚊𝚗𝚍𝚘𝚜 𝙳𝚎 𝚅𝚎𝚗𝚝𝚊𝚜.
+𝙲𝚘𝚖𝚘 𝙲𝚞𝚊𝚕𝚎𝚜 ¿?
+.𝚟𝚎𝚗𝚝𝚊𝚜 " 𝙼𝚄𝙴𝚂𝚃𝚁𝙰 𝙻𝙰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝚅𝙴𝙽𝚃𝙰𝚂 𝚀𝚄𝙴 𝚃𝙸𝙴𝙽𝙴𝚂 𝙰𝙲𝚃𝙸𝚅𝙰 "
+.𝚙𝚊𝚐𝚘 " 𝙸𝙽𝙳𝙸𝙲𝙰 𝙰 𝚃𝚄𝚂 𝙲𝙻𝙸𝙴𝙽𝚃𝙴𝚂 𝚃𝚄𝚂 𝙼𝙴𝚃𝙾𝙳𝙾𝚂 𝙳𝙴 𝙿𝙰𝙶𝙾𝚂 𝙼𝙰𝚂 𝚁𝙰𝙿𝙸𝙳𝙾𝚂 "
 
-*BOT PARA GRUPO* :
-> wa.me/527971006556
+𝙴𝚗𝚝𝚛𝚎 𝙼𝚞𝚌𝚑𝚊𝚜 𝙼𝚊𝚜 𝙾𝚙𝚌𝚒𝚘𝚗𝚎𝚜
 
-*BOT PERZONALIZADO* :
-> wa.me/525544876071
+𝐋𝐢𝐧𝐤 𝐏𝐚𝐫𝐚 𝐌𝐚𝐬 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐜𝐢𝐨𝐧 : 
 `;
