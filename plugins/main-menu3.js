@@ -42,7 +42,7 @@ ${tituloEspecial}
 `.trim()
 
   // Imagen 
-  const url = 'https://files.catbox.moe/mfkwj2.jpg' // Puedes subir otra a Imagen si deseas
+  const url = 'https://files.catbox.moe/z604jy.jpeg' // Puedes subir otra a Imagen si deseas
 
   await conn.sendFile(m.chat, url, 'menurpg.jpg', texto, m)
 }
