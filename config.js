@@ -16,8 +16,8 @@ global.botNumber = '' //Ejemplo: 525218138672
 //*──ׄ✞ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─*
 
 global.owner = [
-  ['5215544876071', '🜲 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 👻', true],
-  ['5217971289909'],
+  ['51936994155', '🜲 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 👻', true],
+  ['51936994155'],
   [''], // Espacio 1
   [''], // Espacio 2
   ['']  // Espacio 3
@@ -35,53 +35,53 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.8'
 global.vs = '2.0.0'
 global.languaje = 'Español'
-global.nameqr = 'black clover- Bot'
-global.sessions = 'blackSession'
-global.jadi = 'blackJadiBot'
-global.blackJadibts = true
+global.nameqr = 'Ghost Mode- Bot'
+global.sessions = 'ghostSession'
+global.jadi = 'ghostJadiBot'
+global.ghostJadibts = true
 
 //*─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─*
 
 global.packsticker = `
-┃ ✞ 𝙱𝙾𝚃: 𝙱𝚕𝚊𝚌𝚔 𝙲𝚕𝚘𝚟𝚎𝚛 ☘
-┃ ✞ 𝙰𝚄𝚃𝙾𝚁: 👑 𝚃𝙷𝙴 𝙲𝙰𝚁𝙻𝙾𝚂 ᚲ`;
+┃ ✞ 𝙱𝙾𝚃: 𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎 ☘
+┃ ✞ 𝙰𝚄𝚃𝙾𝚁: @𝚎𝚟𝚘𝚕𝚞𝚝𝚒𝚘𝚗.𝚑𝚊𝚌𝚔 👑ᚲ`;
 
-global.packname = `✠ 𝕭𝖑𝖆𝖈𝖐 𝕮𝖑𝖔𝖛𝖊𝖗 ☘ `;
+global.packname = `✠ 𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲 ☘ `;
 global.author = `
 ⇝ 📆 ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}
 ⇝ ⏰ ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}
 ♾━━━━━━━━━━━━━━━♾`;
 
-global.wm = '𝑩𝒍𝒂𝒄𝒌 𝑪𝒍𝒐𝒗𝒆𝒓 ☘';
-global.titulowm = '𝕭𝖑𝖆𝖈𝖐 𝕮𝖑𝖔𝖛𝖊𝖗 ☘';
-global.igfg = 'ᥫ𝐓𝐇𝐄 𝐂𝐀𝐑𝐋𝐎𝐒'
-global.botname = '𝕭𝖑𝖆𝖈𝖐 𝕮𝖑𝖔𝖛𝖊𝖗 ☘'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ the Legends ⚡'
-global.textbot = '𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹  : 𝐓𝐇𝐄 𝐂𝐀𝐑𝐋𝐎𝐒'
-global.gt = '͟͞𝕭𝖑𝖆𝖈𝖐 𝕮𝖑𝖔𝖛𝖊𝖗 ☘͟͞';
-global.namechannel = '𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 / 𝐓𝐇𝐄 𝐂𝐀𝐑𝐋𝐎𝐒'
+global.wm = '𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲 ☘';
+global.titulowm = '𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲 ☘';
+global.igfg = '@𝗲𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻.𝗵𝗮𝗰𝗸'
+global.botname = '𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲 ☘'
+global.dev = '©𝗲𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻.𝗵𝗮𝗰𝗸 ⚡'
+global.textbot = '𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲  : @𝗲𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻.𝗵𝗮𝗰𝗸'
+global.gt = '͟͞𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲 ☘͟͞';
+global.namechannel = '𝗚𝗵𝗼𝘀𝘁 𝗕𝗼𝘁 𝗦𝘂𝗽𝗿𝗲𝗺𝗲 / @𝗲𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻.𝗵𝗮𝗰𝗸'
 
 //*─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─*
 
 global.moneda = 'moneda'
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺  𝐓𝐇𝐄 𝐋𝐄𝐆𝐄𝐍𝐃𝐒 ™◞ • 🌿
-global.gp4 = 'https://chat.whatsapp.com/LfeYIFkvzZtJ8hQCYwqI1W?mode=ac_t' //Grupo Oficial De black clover 
-global.gp1 = 'https://chat.whatsapp.com/FiBcPMYEO7mG4m16gBbwpP' //Grupo 2
-global.gp2 = 'https://chat.whatsapp.com/G9zQlCHDBrn99wcC2FyWgm'//
-global.channel = 'https://whatsapp.com/channel/0029Vai28FR7dmea9gytQm3w' //Canal Oficial
-global.channel2 = 'https://whatsapp.com/channel/0029Vai28FR7dmea9gytQm3w' //Canal test 
-global.yt = 'https://www.youtube.com/@ElCarlos.87' //Canal De Youtube
-global.md = 'https://github.com/thecarlos19/black-clover-MD' //Github Oficial
+global.gp4 = 'https://chat.whatsapp.com/I4yJ2vrlhGXH3JRg06mxFZ' //Grupo Oficial De black clover 
+global.gp1 = 'https://chat.whatsapp.com/I4yJ2vrlhGXH3JRg06mxFZ' //Grupo 2
+global.gp2 = 'https://chat.whatsapp.com/I4yJ2vrlhGXH3JRg06mxFZ'//
+global.channel = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m' //Canal Oficial
+global.channel2 = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m' //Canal test 
+global.yt = 'https://www.youtube.com/' //Canal De Youtube
+global.md = 'https://github.com' //Github Oficial
 global.correo = ''
-global.cn ='https://whatsapp.com/channel/0029Vai28FR7dmea9gytQm3w';
+global.cn ='https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m';
 
 //*─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─✞─ׄ─ׅ─ׄ─*
 
 global.catalogo = fs.readFileSync('./src/catalogo.jpg');
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: packname, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 global.ch = {
-ch1: '120363307694217288@newsletter',
+ch1: '120363419947391620@newsletter',
 }
 global.multiplier = 70
 
