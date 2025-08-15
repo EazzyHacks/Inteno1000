@@ -11,9 +11,10 @@ const textCyberpunk = (text) => {
 }
 
 let tags = {
+  'ffsur': textCyberpunk('Free Fire Sur'),
+  'ffnorte': textCyberpunk('Free Fire EeUu'),
   'main': textCyberpunk('sistema'),
   'group': textCyberpunk('grupos'),
-  'serbot': textCyberpunk('sub bots'),
 }
 
 const defaultMenu = {
@@ -26,14 +27,11 @@ const defaultMenu = {
 ║ ⏳ 𝙰𝚌𝚝𝚒𝚟𝚘 » %muptime  
 ║ 👥 𝚄𝚜𝚞𝚊𝚛𝚒𝚘𝚜 » %totalreg  
 ╚═━⊱   𝙴𝚗𝚍 𝙾𝚏 𝙻𝚒𝚗𝚎.    ⊰━═╝
-
-🧬 » 𝗛𝗔𝗖𝗞 𝗡𝗢𝗗𝗘 𝗔𝗖𝗧𝗜𝗩𝗢 «
-👑 » 𝗢𝗽𝗲𝗿𝗮𝗱𝗼𝗿: 𝕿𝖍𝖊 𝕮𝖆𝖗𝖑𝖔𝖘 «
 %readmore
 `.trimStart(),
 
   header: '\n╭─〔 🦠 %category 〕─╮',
-  body: '│ ⚙️ %cmd\n',
+  body: '│ ⚙️ %cmd',
   footer: '╰────────────────╯',
   after: '\n⌬ 𝗖𝗬𝗕𝗘𝗥 𝗠𝗘𝗡𝗨 ☠️ - Sistema ejecutado con éxito.'
 }
@@ -101,13 +99,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 
     // ENVÍO DEL VIDEO
     await conn.sendMessage(m.chat, {
-      video: { url: 'https://qu.ax/QJOki.mp4' }, // reemplaza con tu link
+      video: { url: 'https://files.catbox.moe/6ds908.mp4' }, // reemplaza con tu link
       caption: text,
       gifPlayback: true,
-      footer: '🧠 BLACK CLOVER SYSTEM ☘️',
+      footer: '🧠 Ghost Bot Supreme ☘️',
       buttons: [
-        { buttonId: `${_p}menurpg`, buttonText: { displayText: '🏛️ M E N U R P G' }, type: 1 },
-        { buttonId: `${_p}code`, buttonText: { displayText: '🕹 ＳＥＲＢＯＴ' }, type: 1 }
+        { buttonId: `${_p}menurpg`, buttonText: { displayText: '🏛️ M E N U  R P G' }, type: 1 },
+        { buttonId: `${_p}ghostshop`, buttonText: { displayText: '🕹 C O M P R A R' }, type: 1 }
       ]
     }, { quoted: m })
 
