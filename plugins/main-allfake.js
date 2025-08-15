@@ -39,17 +39,17 @@ global.getBuffer = async function getBuffer(url, options) {
   }
 }
 
-global.creador = 'Wa.me/525544876071'
+global.creador = 'Wa.me/51936994155'
 global.ofcbot = `${conn?.user?.jid?.split('@')[0] || ''}`
-global.asistencia = 'Wa.me/525544876071'
-global.namechannel = '⏤͟͞㋡ 𝐓𝐇𝐄 𝐋𝐄𝐆𝐄𝐍𝐃𝐒 '
-global.namegrupo = ' 𝕭𝖑𝖆𝖈𝖐 𝕮𝖑𝖔𝖛𝖊𝖗 ☘︎'
-global.namecomu = '𝗖𝗼𝗺𝘂𝗻𝗶𝗱𝗮𝗱 ⏤͟͞ 𝐓𝐇𝐄 𝐋𝐄𝐆𝐄𝐍𝐃𝐒 '
+global.asistencia = 'Wa.me/51936994155'
+global.namechannel = '𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎'
+global.namegrupo = '𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎'
+global.namecomu = '𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎'
 global.listo = '⚔️ *Aquí tienes perra*'
 
 //Ids channel
-global.canalIdM = ["120363307694217288@newsletter", "120363307694217288@newsletter"]
-global.canalNombreM = ["⏤͟͞㋡ 𝐓𝐇𝐄 𝐋𝐄𝐆𝐄𝐍𝐃𝐒 ", "㋡ 𝐓𝐇𝐄 𝐋𝐄𝐆𝐄𝐍𝐃𝐒 "]
+global.canalIdM = ["120363419947391620@newsletter", "120363419947391620@newsletter"]
+global.canalNombreM = ["𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎", "𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎"]
 global.idchannel = canalIdM[0]
 global.channelRD = await getRandomChannel()
 
@@ -74,12 +74,12 @@ global.emoji4 = '🍭'
 global.emojis = pickRandom([emoji, emoji2, emoji3, emoji4])
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029Vai28FR7dmea9gytQm3w'  
-let canal2 = 'https://whatsapp.com/channel/0029Vai28FR7dmea9gytQm3w'
-var git = 'https://github.com/thecarlos19' 
+var canal = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m'  
+let canal2 = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m'
+var git = 'https://www.instagram.com/evolution.hack' 
 var youtube = '' 
-var github = 'https://github.com/thecarlos19/black-clover-MD' 
-let correo = 'carloscristobal30@gmail.com'
+var github = 'https://github.com' 
+let correo = 'YALLICO2024@gmail.com'
 global.redes = pickRandom([canal, git, github, correo])
 
 let category = "imagen"
