@@ -14,20 +14,19 @@ let handler = async (m, { conn }) => {
 
 📔 *INFO:* Si se rompen las reglas, puedes ser baneado y bloqueado del bot.
 
-📝 *NOTA:* Este bot oficial es *BlackClover (OFC)*. No nos responsabilizamos por otros bots falsos. Usa *.owner* para verificar el staff oficial.
+📝 *NOTA:* Este bot oficial es *@evolution.hack (OFC)*. No nos responsabilizamos por otros bots falsos. Usa *.owner* para verificar el staff oficial.
 
 🌟 Si te gusta el bot, puedes visitar el repositorio y dejar una estrella.
-${global.md || 'https://github.com/thecarlos19/Black-Clover-MD'}  
+${global.md || 'https://instagram.com/evolution.hack'}  
 `.trim()
 
-  const imagen = imagen2 || 'https://i.imgur.com/U4BTrvK.jpeg' // Imagen predeterminada si no hay imagen2 definida
+  const imagen = imagen2 || 'https://files.catbox.moe/z604jy.jpeg' // Imagen predeterminada si no hay imagen2 definida
   await conn.sendFile(m.chat, imagen, 'reglas.jpg', Reglas, m)
 }
 
 handler.help = ['reglas']
 handler.tags = ['info']
-handler.customPrefix = /^(reglas|reglasbot|uso|usobot|uso del bot|botreglas)$/i
-handler.command = new RegExp // No necesario si usas customPrefix
+handler.command = ['reglas', 'reglasbot']
 handler.register = true
 handler.exp = 70
 
