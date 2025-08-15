@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let totalreg = Object.keys(global.db.data.users).length
   let totalchats = Object.keys(global.db.data.chats).length
   let vs = global.vs || '1.0.0'
-  let pp = "https://files.catbox.moe/8lfoj3.jpg"
+  let pp = "https://files.catbox.moe/z604jy.jpeg"
 
   // Tiempo de actividad (uptime) del proceso principal
   if (process.send) {
@@ -37,10 +37,10 @@ let handler = async (m, { conn, usedPrefix }) => {
   let blackclover = `
 ╭━━━━◇◇◇━━━━⬣
 ┃ ⚙️  *SISTEMA DE ESTADO*
-┃ 🔰 *BLACK CLOVER BOT* ⚔️
+┃ 🔰 *GHOST MODE BOT* ⚔️
 ╰━━━━◇◇◇━━━━⬣
 
-👑 *Creador:* the-carlos
+👑 *Creador:* evolution.hack
 📟 *Prefijo:* [ ${usedPrefix} ]
 📦 *Versión:* ${vs}
 
