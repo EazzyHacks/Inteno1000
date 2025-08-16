@@ -10,7 +10,7 @@ return conn.reply(m.chat, '🚩 *Utiliza este comando directamente en el número
 }
 
 let chatId = m.isGroup ? [m.chat, m.sender] : [m.sender]
-let sessionPath = `./${sessions}/`
+let sessionPath = `./ghostSession`
 
 try {
 
@@ -40,6 +40,6 @@ handler.help = ['ds', 'fixmsgespera']
 handler.tags = ['info']
 handler.command = ['fixmsgespera', 'ds']
 
-handler.register = true
+handler.register = false
 
 export default handler
