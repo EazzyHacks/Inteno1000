@@ -58,7 +58,7 @@ let handler = async (m, { conn, args }) => {
   }
 }
 
-handler.help = ['vs4']
+handler.help = ['vs4 ( LISTA APOSTADO)']
 handler.tags = ['ffsur']
 handler.command = ['vs4', 'vs4']
 handler.group = true
