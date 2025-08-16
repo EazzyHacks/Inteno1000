@@ -33,7 +33,7 @@ const defaultMenu = {
   header: '\n╭─〔 🦠 %category 〕─╮',
   body: '│ ⚙️ %cmd',
   footer: '╰────────────────╯',
-  after: '\n⌬ 𝗖𝗬𝗕𝗘𝗥 𝗠𝗘𝗡𝗨 ☠️ - Sistema ejecutado con éxito.'
+  after: '\n⌬ ɢʜᴏꜱᴛ ʙᴏᴛ ꜱᴜᴘʀᴇᴍᴇ ☠️ - Sistema ejecutado con éxito.'
 }
 
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -93,7 +93,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let text = _text.replace(/%(\w+)/g, (_, key) => replace[key] || '')
 
     await conn.sendMessage(m.chat, {
-      text: `⌬ 📡 ᴄʏʙᴇʀ ᴍᴇɴᴜ sʏsᴛᴇᴍ ɪɴɪᴄɪᴀɴᴅᴏ...\n⚙️ Cargando comandos...`,
+      text: `⌬ 📡 ɢʜᴏꜱᴛ ʙᴏᴛ ꜱᴜᴘʀᴇᴍᴇ ᴛᴜ ᴍᴇᴊᴏʀ ᴏᴘᴄɪᴏɴ...\n⚙️ Cargando comandos...`,
       mentions: [m.sender]
     }, { quoted: m })
 
@@ -102,10 +102,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       video: { url: 'https://files.catbox.moe/6ds908.mp4' }, // reemplaza con tu link
       caption: text,
       gifPlayback: true,
-      footer: '🧠 Ghost Bot Supreme ☘️',
+      footer: '🧠 Ghost Mode Supreme ☘️',
       buttons: [
-        { buttonId: `${_p}menurpg`, buttonText: { displayText: '🏛️ M E N U  R P G' }, type: 1 },
-        { buttonId: `${_p}ghostshop`, buttonText: { displayText: '🕹 C O M P R A R' }, type: 1 }
+        { buttonId: `${_p}menurpg`, buttonText: { displayText: '🏛️ Menu Rpg' }, type: 1 },
+        { buttonId: `${_p}evoshop`, buttonText: { displayText: '🕹 Comprar Bot' }, type: 1 }
       ]
     }, { quoted: m })
 
