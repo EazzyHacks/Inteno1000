@@ -20,7 +20,7 @@ let handler = async (m, { conn, args }) => {
   // Calcular la hora adelantada
   const horaUsuarioSplit = horaUsuario.split(':');
   let horaAdelantada = '';
-  if (horaUsuarioSplit.length === 2) {
+  if (horaUsuarioSplit.length === 1) {
     const horaNumerica = parseInt(horaUsuarioSplit[0], 10);
     const minutoNumerico = parseInt(horaUsuarioSplit[1], 10);
     const horaAdelantadaNumerica = horaNumerica + 1; // Adelantar 1 hora
@@ -123,5 +123,7 @@ ${data.jugadores.length < 4 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
   return false
 }
+
+export default handler
 
 export default handler
