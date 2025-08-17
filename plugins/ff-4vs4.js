@@ -17,16 +17,16 @@ let handler = async (m, { conn, args }) => {
   const horaUsuario = args[0]; // Hora proporcionada por el usuario
   const genero = args.slice(1).join(' '); // genero proporcionada por el usuario
 
-  // Calcular la hora adelantada
+   // Calcular la hora adelantada
   const horaUsuarioSplit = horaUsuario.split(':');
   let horaAdelantada = '';
-  if (horaUsuarioSplit.length === 1) {
+  if (horaUsuarioSplit.length === 2) {
     const horaNumerica = parseInt(horaUsuarioSplit[0], 10);
     const minutoNumerico = parseInt(horaUsuarioSplit[1], 10);
     const horaAdelantadaNumerica = horaNumerica + 1; // Adelantar 1 hora
-    horaAdelantada = `${horaAdelantadaNumerica.toString().padStart(1, '0')}:${minutoNumerico.toString().padStart(1, '0')}`;
+    horaAdelantada = `${horaAdelantadaNumerica.toString().padStart(2, '0')}:${minutoNumerico.toString().padStart(2, '0')}`;
   }
-
+  
   let plantilla = `
 ╭·····················➤
 │ ✭⋆ ⸒ ⚔️ Modalidad: Clk
@@ -127,3 +127,4 @@ ${data.jugadores.length < 4 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 export default handler
 
 export default handler
+
