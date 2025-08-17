@@ -5,7 +5,7 @@ let handler = async (m, { conn, args }) => {
   if (args.length < 2) {
     conn.reply(m.chat, '_Debes proporcionar la hora (HH:MM) y el genero._', m);
     return;
-  }
+  } 
 
   // Validar el formato de la hora
   const horaRegex = /^([01]\d|2[0-3]):?([0-5]\d)$/;
