@@ -126,7 +126,7 @@ ${data.jugadores.length < 4 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
 export default handler
 
-export default handler
+
 
 
 
