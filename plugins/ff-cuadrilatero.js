@@ -38,20 +38,14 @@ let handler = async (m, { conn, args }) => {
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
 │
 │ Escuadra 2 :
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
 │
 │ Escuadra 3 :
-│ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
@@ -76,9 +70,9 @@ let handler = async (m, { conn, args }) => {
   }
 }
 
-handler.help = ['12vs12 ( Lista Cuadrilatero )']
+handler.help = ['cuadrilatero ( Lista Cuadrilatero )']
 handler.tags = ['ffeeuu']
-handler.command = ['12vs12', '12vs12']
+handler.command = ['cuadrilatero', 'cuadrilatero']
 handler.group = true
 handler.admin = true
 

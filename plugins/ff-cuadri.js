@@ -38,20 +38,14 @@ let handler = async (m, { conn, args }) => {
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
 │
 │ Escuadra 2 :
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
 │
 │ Escuadra 3 :
-│ ʿ  🥷🏻: 
-│ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
@@ -76,9 +70,9 @@ let handler = async (m, { conn, args }) => {
   }
 }
 
-handler.help = ['vs12 ( Lista Cuadrilatero)']
+handler.help = ['cuadri ( Lista Cuadrilatero)']
 handler.tags = ['ffsur']
-handler.command = ['vs12', 'vs12']
+handler.command = ['cuadri2', 'cuadri']
 handler.group = true
 handler.admin = true
 
