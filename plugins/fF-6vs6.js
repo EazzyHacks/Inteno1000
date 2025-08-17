@@ -1,4 +1,4 @@
-let partidasVS4 = {};
+let partidasVS6 = {};
 
 let handler = async (m, { conn, args }) => {
   // Verificar si se proporcionaron los argumentos necesarios
@@ -10,7 +10,7 @@ let handler = async (m, { conn, args }) => {
   // Validar el formato de la hora
   const horaRegex = /^([01]\d|2[0-3]):?([0-5]\d)$/;
   if (!horaRegex.test(args[0])) {
-    conn.reply(m.chat, '_Formato de hora incorrecto. Debe ser HH:MM en formato de 24 horas._', m);
+    conn.reply(m.chat, '_Formato de hora incorrecto. Debe ser HH:MM en formato de 26 horas._', m);
     return;
   }
 
@@ -29,14 +29,17 @@ let handler = async (m, { conn, args }) => {
 
   let plantilla = `
 ╭·····················➤
-│ ✭⋆ ⸒ ⚔️ Modalidad: Apostado
+│ ✭⋆ ⸒ ⚔️ Modalidad: By
 │ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇵🇪 ⌇ ${horaAdelantada}🇦🇷
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${genero}
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
 │ suplentes: 
+│ ʿ ☁️: 
 │ ʿ ☁️: 
 ╰····················· ᡣ
 
@@ -44,7 +47,7 @@ let handler = async (m, { conn, args }) => {
   `.trim()
 
   let msg = await conn.sendMessage(m.chat, { text: plantilla }, { quoted: m })
-  partidasVS4[msg.key.id] = {
+  partidasVS6[msg.key.id] = {
     chat: m.chat,
     jugadores: [],
     suplentes: [],
@@ -55,9 +58,9 @@ let handler = async (m, { conn, args }) => {
   }
 }
 
-handler.help = ['vs4 ( Lista Apostado )']
-handler.tags = ['ffsur']
-handler.command = ['vs4', 'vs4']
+handler.help = ['6vs6 ( Lista 320 )']
+handler.tags = ['ffeeuu']
+handler.command = ['6vs6', '6vs6']
 handler.group = true
 handler.admin = true
 
@@ -74,15 +77,15 @@ handler.before = async function (m) {
   if (!['❤️', '👍🏻', '❤', '👍'].includes(emoji)) return false
   
   // Verificar si existe la partida
-  if (!partidasVS4[key.id]) return false
+  if (!partidasVS6[key.id]) return false
 
-  let data = partidasVS4[key.id]
+  let data = partidasVS6[key.id]
 
   // Verificar si el usuario ya está en la lista
   if (data.jugadores.includes(sender) || data.suplentes.includes(sender)) return false
 
   // Agregar a jugadores principales o suplentes
-  if (data.jugadores.length < 4) {
+  if (data.jugadores.length < 6) {
     data.jugadores.push(sender)
   } else if (data.suplentes.length < 2) {
     data.suplentes.push(sender)
@@ -96,19 +99,21 @@ handler.before = async function (m) {
 
   let plantilla = `
 ╭·····················➤
-│ ✭⋆ ⸒ ⚔️ Modalidad: Apostado
+│ ✭⋆ ⸒ ⚔️ Modalidad: By
 │ ✭⋆ ⸒ ⏰ Horario: ${data.horaUsuario}🇵🇪 ⌇ ${data.horaAdelantada}🇦🇷
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${data.genero} 
 │ ʿ  🥷🏻: ${jugadores[0] || ''}
 │ ʿ  🥷🏻: ${jugadores[1] || ''}
 │ ʿ  🥷🏻: ${jugadores[2] || ''}
 │ ʿ  🥷🏻: ${jugadores[3] || ''}
+│ ʿ  🥷🏻: ${jugadores[4] || ''}
+│ ʿ  🥷🏻: ${jugadores[5] || ''}
 │ suplentes: 
 │ ʿ ☁️: ${suplentes[0] || ''}
 │ ʿ ☁️: ${suplentes[1] || ''}
 ╰····················· ᡣ
 
-${data.jugadores.length < 4 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌𝚌𝚒𝚘𝚗𝚊 𝚌𝚘𝚗 ❤️ 𝚙𝚊𝚛𝚊 𝚞𝚗𝚒𝚛𝚝𝚎)' : '✅ 𝐋𝐈𝐒𝐓𝐀 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀'}
+${data.jugadores.length < 6 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌𝚌𝚒𝚘𝚗𝚊 𝚌𝚘𝚗 ❤️ 𝚙𝚊𝚛𝚊 𝚞𝚗𝚒𝚛𝚝𝚎)' : '✅ 𝐋𝐈𝐒𝐓𝐀 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀'}
   `.trim()
 
   try {

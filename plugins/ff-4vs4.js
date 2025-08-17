@@ -29,8 +29,8 @@ let handler = async (m, { conn, args }) => {
 
   let plantilla = `
 ╭·····················➤
-│ ✭⋆ ⸒ ⚔️ Modalidad: Apostado
-│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇵🇪 ⌇ ${horaAdelantada}🇦🇷
+│ ✭⋆ ⸒ ⚔️ Modalidad: Clk
+│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇲🇽 ⌇ ${horaAdelantada}🇨🇴
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${genero}
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
@@ -55,9 +55,9 @@ let handler = async (m, { conn, args }) => {
   }
 }
 
-handler.help = ['vs4 ( Lista Apostado )']
-handler.tags = ['ffsur']
-handler.command = ['vs4', 'vs4']
+handler.help = ['4vs4 ( Lista Clk )']
+handler.tags = ['ffeeuu']
+handler.command = ['4vs4', '4vs4']
 handler.group = true
 handler.admin = true
 
@@ -96,8 +96,8 @@ handler.before = async function (m) {
 
   let plantilla = `
 ╭·····················➤
-│ ✭⋆ ⸒ ⚔️ Modalidad: Apostado
-│ ✭⋆ ⸒ ⏰ Horario: ${data.horaUsuario}🇵🇪 ⌇ ${data.horaAdelantada}🇦🇷
+│ ✭⋆ ⸒ ⚔️ Modalidad: Clk
+│ ✭⋆ ⸒ ⏰ Horario: ${data.horaUsuario}🇲🇽 ⌇ ${data.horaAdelantada}🇨🇴
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${data.genero} 
 │ ʿ  🥷🏻: ${jugadores[0] || ''}
 │ ʿ  🥷🏻: ${jugadores[1] || ''}
