@@ -120,7 +120,7 @@ handler.all = async function (m) {
     'https://files.catbox.moe/z604jy.jpeg'
   ])
 
-  global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name }, externalAdReply: { showAdAttribution: true, title: "𝕭𝖑𝖆𝖈𝖐 𝕮𝖑𝖔𝖛𝖊𝖗 ☘", body: "𝐓𝐇𝐄 𝐂𝐀𝐑𝐋𝐎𝐒", mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, } }
+  global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name }, externalAdReply: { showAdAttribution: true, title: "𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎", body: "𝙶𝚑𝚘𝚜𝚝 𝙱𝚘𝚝 𝚂𝚞𝚙𝚛𝚎𝚖𝚎", mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, } }
 
 }
 
