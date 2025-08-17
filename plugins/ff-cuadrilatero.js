@@ -24,7 +24,7 @@ let handler = async (m, { conn, args }) => {
     const horaNumerica = parseInt(horaUsuarioSplit[0], 10);
     const minutoNumerico = parseInt(horaUsuarioSplit[1], 10);
     const horaAdelantadaNumerica = horaNumerica + 1; // Adelantar 1 hora
-    horaAdelantada = `${horaAdelantadaNumerica.toString().padStart(1, '0')}:${minutoNumerico.toString().padStart(1, '0')}`;
+    horaAdelantada = `${horaAdelantadaNumerica.toString().padStart(2, '0')}:${minutoNumerico.toString().padStart(2, '0')}`;
   }
 
   let plantilla = `
@@ -155,3 +155,4 @@ ${data.jugadores.length < 12 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 }
 
 export default handler
+
