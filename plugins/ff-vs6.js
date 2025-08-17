@@ -5,7 +5,7 @@ let handler = async (m, { conn, args }) => {
   if (args.length < 2) {
     conn.reply(m.chat, '_Debes proporcionar la hora (HH:MM) y el genero._', m);
     return;
-  }
+  } 
 
   // Validar el formato de la hora
   const horaRegex = /^([01]\d|2[0-3]):?([0-5]\d)$/;
@@ -15,7 +15,7 @@ let handler = async (m, { conn, args }) => {
   }
 
   const horaUsuario = args[0]; // Hora proporcionada por el usuario
-  const modalidad = args.slice(1).join(' '); // Modalidad proporcionada por el usuario
+  const genero = args.slice(1).join(' '); // genero proporcionada por el usuario
 
   // Calcular la hora adelantada
   const horaUsuarioSplit = horaUsuario.split(':');
@@ -23,28 +23,26 @@ let handler = async (m, { conn, args }) => {
   if (horaUsuarioSplit.length === 2) {
     const horaNumerica = parseInt(horaUsuarioSplit[0], 10);
     const minutoNumerico = parseInt(horaUsuarioSplit[1], 10);
-    const horaAdelantadaNumerica = horaNumerica - 2; // Adelantar 1 hora
+    const horaAdelantadaNumerica = horaNumerica + 2; // Adelantar 1 hora
     horaAdelantada = `${horaAdelantadaNumerica.toString().padStart(2, '0')}:${minutoNumerico.toString().padStart(2, '0')}`;
   }
 
   let plantilla = `
-⏰| 𝑯𝒐𝒓𝒂:  ${horaUsuario}🇦🇷  ${horaAdelantada}🇵🇪
-🏯| 𝑴𝒐𝒅𝒐: By
-⚔️| 𝙂𝙚𝙣𝙚𝙧𝙤: ${modalidad}
+╭·····················➤
+│ ✭⋆ ⸒ ⚔️ Modalidad: By
+│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇵🇪 ⌇ ${horaAdelantada}🇦🇷
+│ ✭⋆ ⸒ 🫶🏼 Genero: ${genero}
+│ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
+│ ʿ  🥷🏻: 
+│ suplentes: 
+│ ʿ ☁️: 
+│ ʿ ☁️: 
+╰····················· ᡣ
 
-╭── ⋆⋅☆⋅⋆ ──┈┈
-│˚.⋆🥷🏻→ 
-│˚.⋆🥷🏻→ 
-│˚.⋆🥷🏻→ 
-│˚.⋆🥷🏻→ 
-│˚.⋆🥷🏻→ 
-│˚.⋆🥷🏻→ 
-╰─── ⋆⋅☆⋅⋆ ────
-
-╭── ⋆⋅☆⋅⋆ ──┈┈
-│˚.⋆🥷🏻→ 
-│˚.⋆🥷🏻→ 
-╰─── ⋆⋅☆⋅⋆ ────
      (𝚁𝚎𝚊𝚌𝚌𝚒𝚘𝚗𝚊 𝚌𝚘𝚗 ❤️ 𝚙𝚊𝚛𝚊 𝚞𝚗𝚒𝚛𝚝𝚎)
   `.trim()
 
@@ -55,12 +53,12 @@ let handler = async (m, { conn, args }) => {
     suplentes: [],
     horaUsuario: horaUsuario,
     horaAdelantada: horaAdelantada,
-    modalidad: modalidad,
+    genero: genero,
     originalMsg: msg,
   }
 }
 
-handler.help = ['vs6 ( LISTA BY )']
+handler.help = ['vs6 ( Lista By )']
 handler.tags = ['ffsur']
 handler.command = ['vs6', 'vs6']
 handler.group = true
@@ -100,24 +98,20 @@ handler.before = async function (m) {
   let suplentes = data.suplentes.map(u => `@${u.split('@')[0]}`)
 
   let plantilla = `
-⏰| 𝑯𝒐𝒓𝒂:  ${data.horaUsuario} 🇦🇷  ${data.horaAdelantada} 🇵🇪
-🏯| 𝑴𝒐𝒅𝒐: Apostado
-⚔️| 𝙂𝙚𝙣𝙚𝙧𝙤:  ${data.modalidad}
-
-╭── ⋆⋅☆⋅⋆ ──┈┈
-│˚.⋆🥷🏻→ ${jugadores[0] || ''}
-│˚.⋆🥷🏻→ ${jugadores[1] || ''}
-│˚.⋆🥷🏻→ ${jugadores[2] || ''}
-│˚.⋆🥷🏻→ ${jugadores[3] || ''}
-│˚.⋆🥷🏻→ ${jugadores[6] || ''}
-│˚.⋆🥷🏻→ ${jugadores[5] || ''}
-╰─── ⋆⋅☆⋅⋆ ────
-
-╭── ⋆⋅☆⋅⋆ ──┈┈
-│˚.⋆🥷🏻→ ${suplentes[0] || ''}
-│˚.⋆🥷🏻→ ${suplentes[1] || ''}
-│˚.⋆🥷🏻→ ${suplentes[2] || ''}
-╰─── ⋆⋅☆⋅⋆ ────
+╭·····················➤
+│ ✭⋆ ⸒ ⚔️ Modalidad: By
+│ ✭⋆ ⸒ ⏰ Horario: ${data.horaUsuario}🇵🇪 ⌇ ${data.horaAdelantada}🇦🇷
+│ ✭⋆ ⸒ 🫶🏼 Genero: ${data.genero} 
+│ ʿ  🥷🏻: ${jugadores[0] || ''}
+│ ʿ  🥷🏻: ${jugadores[1] || ''}
+│ ʿ  🥷🏻: ${jugadores[2] || ''}
+│ ʿ  🥷🏻: ${jugadores[3] || ''}
+│ ʿ  🥷🏻: ${jugadores[4] || ''}
+│ ʿ  🥷🏻: ${jugadores[5] || ''}
+│ suplentes: 
+│ ʿ ☁️: ${suplentes[0] || ''}
+│ ʿ ☁️: ${suplentes[1] || ''}
+╰····················· ᡣ
 
 ${data.jugadores.length < 6 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌𝚌𝚒𝚘𝚗𝚊 𝚌𝚘𝚗 ❤️ 𝚙𝚊𝚛𝚊 𝚞𝚗𝚒𝚛𝚝𝚎)' : '✅ 𝐋𝐈𝐒𝐓𝐀 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀'}
   `.trim()
