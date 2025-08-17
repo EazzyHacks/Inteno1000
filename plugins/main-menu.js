@@ -12,7 +12,7 @@ const textCyberpunk = (text) => {
 
 let tags = {
   'ffsur': textCyberpunk('Free Fire Sur'),
-  'ffnorte': textCyberpunk('Free Fire EeUu'),
+  'ffeeuu': textCyberpunk('Free Fire EeUu'),
   'main': textCyberpunk('sistema'),
   'group': textCyberpunk('grupos'),
 }
