@@ -10,7 +10,7 @@ let handler = async (m, { conn, args }) => {
   // Validar el formato de la hora
   const horaRegex = /^([01]\d|2[0-3]):?([0-5]\d)$/;
   if (!horaRegex.test(args[0])) {
-    conn.reply(m.chat, '_Formato de hora incorrecto. Debe ser HH:MM en formato de 26 horas._', m);
+    conn.reply(m.chat, '_Formato de hora incorrecto. Debe ser HH:MM en formato de 24 horas._', m);
     return;
   }
 
@@ -131,4 +131,5 @@ ${data.jugadores.length < 6 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
 
 export default handler
+
 
