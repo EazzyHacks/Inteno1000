@@ -55,8 +55,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = ['sticker', 'stiker', 's'].map(v => v + ' <imagen|video|url>')
 handler.tags = ['sticker']
 handler.command = ['s', 'sticker', 'stiker']
-handler.group = false
-handler.register = true
 
 export default handler
 
