@@ -4,17 +4,17 @@
 
 > *👑* **El mejor Bot de WhatsApp** *⚔️*
 
-<h1 align="center">Black - Clover</h1>
+<h1 align="center">Ghost - Moder</h1>
 <p align="center">
-  <img src="https://files.catbox.moe/0ro3o9.jpg" width="300">
+  <img src="https://files.catbox.moe/z604jy.jpeg" width="300">
 </p>
 
 <p align="center">
-  <a href="https://wa.me/525544876071">
-    <img title="Autor" src="https://img.shields.io/badge/CARLOS OFC-black?style=for-the-badge&logo=whatsapp">
+  <a href="https://wa.me/51936994155">
+    <img title="Autor" src="https://img.shields.io/badge/Evolution-black?style=for-the-badge&logo=whatsapp">
   </a>
-  <a href="https://instagram.com/_carlitos.zx">
-    <img title="Instagram del creador" src="https://img.shields.io/badge/@_carlitos.zx-purple?style=for-the-badge&logo=instagram">
+  <a href="https://instagram.com/evolution.hack">
+    <img title="Instagram del creador" src="https://img.shields.io/badge/@evolution.hack-purple?style=for-the-badge&logo=instagram">
   </a>
 </p>
 
