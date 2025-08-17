@@ -29,8 +29,8 @@ let handler = async (m, { conn, args }) => {
 
   let plantilla = `
 ╭·····················➤
-│ ✭⋆ ⸒ ⚔️ Modalidad: By
-│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇵🇪 ⌇ ${horaAdelantada}🇦🇷
+│ ✭⋆ ⸒ ⚔️ Modalidad: 320
+│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇲🇽 ⌇ ${horaAdelantada}🇨🇴
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${genero}
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
@@ -99,8 +99,8 @@ handler.before = async function (m) {
 
   let plantilla = `
 ╭·····················➤
-│ ✭⋆ ⸒ ⚔️ Modalidad: By
-│ ✭⋆ ⸒ ⏰ Horario: ${data.horaUsuario}🇵🇪 ⌇ ${data.horaAdelantada}🇦🇷
+│ ✭⋆ ⸒ ⚔️ Modalidad: 320
+│ ✭⋆ ⸒ ⏰ Horario: ${data.horaUsuario}🇲🇽 ⌇ ${data.horaAdelantada}🇨🇴
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${data.genero} 
 │ ʿ  🥷🏻: ${jugadores[0] || ''}
 │ ʿ  🥷🏻: ${jugadores[1] || ''}
@@ -131,3 +131,4 @@ ${data.jugadores.length < 6 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
 
 export default handler
+
